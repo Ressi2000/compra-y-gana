@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #202020;
+    color: white;
+}
+body.formulario-page {
+    background: rgb(174,238,177);
+    background: radial-gradient(circle, rgba(174,238,177,0.30575980392156865) 0%, rgba(233,229,148,0.38139005602240894) 100%);
+    color: #202020;
+}
+
+.border-bicolor {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #ffce01, #91c73e, #ffce01, #91c73e, #283a96, #91c73e, #ffce01) 1;
+    border-image-slice: 1;
+    border-image-width: 5px;
+    border-image-repeat: stretch;
+}
+
+/* .modal-content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFAC6 ;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center
+} */
