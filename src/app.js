@@ -33,7 +33,7 @@ app.use(cookieParser());
 
 app.get('/', (req, res) => {
     res.send('Hola Mundo!');
-  });
+});
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
