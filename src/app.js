@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { fileURLToPath } from 'url';
 import path from "path";
+import { config } from 'dotenv';
 
 
 const __filename = fileURLToPath(import.meta.url); // Obtiene la ruta del archivo actual
@@ -30,6 +31,7 @@ app.use(cors({
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cookieParser());
+app.use(config()); // Esto carga las variables de entorno de tu archivo .env)
 
 app.get('/', (req, res) => {
     res.send('Hola Mundo!');
